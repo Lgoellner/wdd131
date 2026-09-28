@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #111;
+    background-color: white;
+}
+
+header {
+    background-color: #430b68;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#site-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: #65258c;
+    border-radius: 4px;
+}
+
+header {
+    flex-wrap: wrap;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 0 1.8rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #430b68;
+    font-size: 1.2rem;
+    margin-top: 0.35rem;
+}
+
+footer {
+    background-color: #430b68;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+#ultimaModificacao {
+    font-size: 0.9rem;
+}

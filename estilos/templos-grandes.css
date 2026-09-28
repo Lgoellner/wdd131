@@ -1,0 +1,75 @@
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 1.5rem 2rem;
+        flex-wrap: nowrap;
+    }
+
+    #site-title {
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        width: 85%;
+        max-width: 1080px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.2rem;
+        row-gap: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    #site-title {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        gap: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.2rem;
+        row-gap: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    figcaption {
+        font-size: 1.15rem;
+    }
+}
