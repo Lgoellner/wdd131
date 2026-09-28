@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
 }
@@ -16,6 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #site-title {
@@ -55,24 +57,11 @@ nav a:hover {
     border-radius: 4px;
 }
 
-header {
-    flex-wrap: wrap;
-}
-
 main {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 2rem 0;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin: 0 0 1.8rem;
-}
-
-main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -80,6 +69,9 @@ main {
 
 h1 {
     grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 0 1.8rem;
 }
 
 figure {
@@ -90,7 +82,9 @@ figure {
 figure img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
 }
 
 figcaption {
@@ -113,4 +107,35 @@ footer p {
 
 #ultimaModificacao {
     font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    figure img {
+        height: 250px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        height: 280px;
+    }
 }
